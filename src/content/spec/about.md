@@ -11,9 +11,11 @@ Fuwari牛逼，我这辈子都不会改博客框架了。
 
 - site rbq.*找到的：https://saltedfishes.com
 
-- 在代理上教了我很多的好朋友：https://ie.cx
+- 在***教了我很多的好朋友：https://ie.cx
 
 - 私人grgk：https://sub.grgk.me
+
+- Gunbrad的博客：https://gunbrad.xyz
 
 - 幻空博客：https://blog.huankong.top
 
