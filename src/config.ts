@@ -44,8 +44,8 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
-			name: "加入技术群",
-			url: "https://s.afo.im/tit", // Internal links should not include the base path, as it is automatically added
+			name: "LinkMe",
+			url: "https://link.me/acofork", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
