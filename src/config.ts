@@ -20,7 +20,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "https://hpic.afo.im", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "https://sb-hpic.afo.im", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: true, // Display the credit text of the banner image
@@ -82,6 +82,6 @@ export const licenseConfig: LicenseConfig = {
 
 export const imageFallbackConfig: ImageFallbackConfig = {
 	enable: true,
-	originalDomain: "free-eo-r2.afo.im",
+	originalDomain: "sb-r2.afo.im",
 	fallbackDomain: "pub-d433ca7edaa74994b3d7c40a7fd7d9ac.r2.dev",
 };
