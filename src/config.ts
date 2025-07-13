@@ -207,11 +207,6 @@ export const navBarConfig: NavBarConfig = {
 			external: false, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "旧统计",
-			url: "https://cloud.umami.is/share/7PoDRgCzHFTs2vWB/afo.im", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-		{
 			name: "新统计",
 			url: "https://umami.afo.im/share/ZyDjOrmjaBTlmGtd/www.afo.im", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
@@ -251,7 +246,7 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: "https://us.umami.is",
-	shareId: "7PoDRgCzHFTs2vWB",
+	baseUrl: "https://umami.afo.im",
+	shareId: "ZyDjOrmjaBTlmGtd",
 	timezone: "Asia/Shanghai",
 };
