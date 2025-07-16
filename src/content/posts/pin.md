@@ -8,21 +8,25 @@ tags: [联系]
 description: 关于如何联系二叉树树~
 ---
 
-# 加入QQ群
+# 加入群聊
 
-我直属管理的技术群：1051639698
+QQ群：1051639698
 
 > 请认准QQ号2726730791、3932644274、3230434312这都是我
+
+神秘链接： https://chat.afo.im
 
 ---
 
 # 其他网站
 
+[Chevereto](https://nginx.php.afo.im)
+
 [ICMP/TCP/HTTP测试](https://php.afo.im/webtest)
 
 [吃掉小柚咲](https://php.afo.im/eatkano/)
 
-[六子棋 - Python](https://sixqi.afo.im)
+[六子棋 - Python](https://sixqi.php.afo.im/)
 
 [二次元随机图 - 竖屏](https://php.afo.im/ri/?img=v)
 
