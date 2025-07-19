@@ -22,7 +22,7 @@ Matrix： matrix.to/#/#acofork-tech:matrix.afo.im [详细教程](https://www.afo
 
 # 其他网站
 
-
+![](https://gxh.vip.qq.com/club/item/parcel/item/d1/d10f548c0c67d401b6bb38e6531e11cb/raw300.gif)
 
 [六子棋 - Python](https://sixqi.afo.im/)
 
