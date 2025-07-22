@@ -14,17 +14,31 @@ QQ群（重要信息都会在此发布，强烈推荐！）：1051639698
 
 > 请认准QQ号2726730791、3932644274、3230434312这都是我
 
+---
+
 TG： [Telegram: Join Group Chat](https://s.afo.im/tg)
 
+> 不常用，但看到会回
+
+---
+
 Matrix： matrix.to/#/#acofork-tech:matrix.afo.im [详细教程](https://www.afo.im/posts/element/)
+
+> 及其不常用，除非你在别的平台让我去看
 
 ---
 
 # 其他网站
 
-![](https://gxh.vip.qq.com/club/item/parcel/item/d1/d10f548c0c67d401b6bb38e6531e11cb/raw300.gif)
+六子棋： https://sixqi.php.afo.im
 
-[六子棋 - Python](https://sixqi.afo.im/)
+图床： https://chevereto.php.afo.im
+
+二次元随机图：
+
+- Cloudflare Worker： https://pic.072103.xyz
+
+- PHP： https://pic.php.afo.im/?img=h/v
 
 ---
 
