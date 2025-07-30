@@ -63,6 +63,28 @@ lang: ''
 
 `IT技术, 网络技术, 服务器部署, 内网穿透, 静态网站, 技术博客, CDN技术, 无服务器, 前后端逆向, Serverless, 云原生, 容器化, Docker, 性能优化, 网站优化, Blog, 博客, afoim, afoim Blog, 二叉树树, AcoFork Blog, Cloudflare, Cloudflare Tunnel, Cloudflare Workers, Cloudflare Pages, Cloudflare R2, EdgeOne CDN, SecBit MCDN, Netlify, Vercel, IPFS, Fleek, Next.js, Hugo, Fuwari, React, Vue, Docker Compose, Umami, GitHub, GitHub Pages, STUN, NAT, NAT1, Tailscale, Zerotier, 反向代理, 负载均衡, SSL证书, 域名解析, NAS, 对象存储, 云存储, 图床, 文件存储, 数据备份, QQBot, Koishi, ChatBot, 自动化部署, CI/CD, GitHub Actions, 域名邮箱, 短链接, 在线工具, meme-generator, 表情包生成, AI工具, 网站安全, 防火墙, 访问控制, DDoS防护, Web安全, 网站统计, 访问分析, 监控告警, 性能监控, 日志分析, 前端开发, 后端开发, 全栈开发, API开发, 微服务, REST API, 技术教程, 部署指南, 配置教程, 实践经验, 开发笔记, 踩坑记录, Kubernetes, k8s, 微服务架构, 分布式系统, 负载均衡, 高可用, 弹性伸缩, MinIO, S3, 对象存储, 文件系统, 数据库, Redis, CDN加速, 缓存优化, 带宽优化, 延迟优化, 边缘计算, PWA, 响应式设计, 移动端优化, 跨平台开发`
 
+# 同内容网站只能有一个
+
+> 如无必要，请不要变更域名。也不要将其他域名指向您的站点
+
+假如我有 `acofork.com` `acofork.cn` 。都想指向我的同一个网站？
+
+**请使用 301 重定向**
+
+否则你的SEO将被破坏，搜索引擎不会将这两个站点视为同一个站点
+
+同时，确保你的域名日后仅作重定向用。因为301重定向会在客户端种下一个种子
+
+客户端第一次访问时，服务器返回301状态码，日后客户端则不会请求服务器，直接重定向到目标URL
+
+如果日后需要将域名挪作他用，那么请不要写任何解析，避免日后部署其他服务部分用户不可用
+
+**解决这个问题需要引导用户清除浏览器的本地缓存，非常麻烦**
+
+# 避免使用相同名字的云托管服务
+
+比如 xLog。我曾经创建过一个 `acofork.xlog.app` 的站点。现在不用了，又由于xLog是区块链，我还丢失了私钥助记词，现在无人能登上，自然也无法删除其中的内容。至今仍在破坏我站的SEO
+
 # 使用Lighthouse分析站点分数
 
 Lighthouse是一个浏览器插件，可以分析站点的性能、无障碍、最佳做法和性能
