@@ -112,10 +112,10 @@ const { remarkPluginFrontmatter } = await entry.render();
 </div>
 <div class="transition border-t-[1px] border-dashed mx-6 border-black/10 dark:border-white/[0.15] last:border-t-0 md:hidden"></div>
 
-<script define:vars={{ entry, umamiConfig, unavailableText: statsConfig.unavailableText }}>
+<script define:vars={{ entry, umamiConfig, unavailableText: statsConfig.unavailableText, viewsText: statsConfig.viewsText, visitsText: statsConfig.visitsText }}>
     // 客户端统计文案生成函数
     function generateStatsText(pageViews, visits) {
-        return `浏览量 ${pageViews} · 访问数 ${visits}`;
+        return `${viewsText} ${pageViews} · ${visitsText} ${visits}`;
     }
     
     // 获取文章浏览量统计

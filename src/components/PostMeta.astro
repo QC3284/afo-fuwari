@@ -77,10 +77,10 @@ const className = Astro.props.class;
 </div>
 
 {slug && (
-    <script define:vars={{ slug, umamiConfig, unavailableText: statsConfig.unavailableText, getStatsText: statsConfig.getStatsText }}>
+    <script define:vars={{ slug, umamiConfig, unavailableText: statsConfig.unavailableText, viewsText: statsConfig.viewsText, visitsText: statsConfig.visitsText }}>
         // 客户端统计文案生成函数
         function generateStatsText(pageViews, visits) {
-            return `浏览量 ${pageViews} · 访问数 ${visits}`;
+            return `${viewsText} ${pageViews} · ${visitsText} ${visits}`;
         }
         
         // 获取访问量统计

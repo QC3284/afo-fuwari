@@ -45,11 +45,11 @@ const config = profileConfig;
     </div>
 </div>
 
-<script define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText }}>
+<script define:vars={{ umamiConfig, unavailableText: statsConfig.unavailableText, viewsText: statsConfig.viewsText, visitsText: statsConfig.visitsText }}>
     // 获取全站访问量统计
     // 客户端统计文案生成函数
     function generateStatsText(pageViews, visits) {
-        return `浏览量 ${pageViews} · 访问数 ${visits}`;
+        return `${viewsText} ${pageViews} · ${visitsText} ${visits}`;
     }
     
     async function loadSiteStats() {
