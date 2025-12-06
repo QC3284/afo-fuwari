@@ -58,6 +58,7 @@ export const siteConfig: SiteConfig = {
 	],
 	officialSites: [
 		{ url: "https://blog.xcqcoo.top", alias: "Netlify" },
+                { url: "https://eo-blog.xcqcoo.top", alias: "EdgeOne" },
 		{ url: "http://localhost:4321", alias: "Dev" }
 	],
 };
