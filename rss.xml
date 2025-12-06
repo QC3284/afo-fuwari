@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>QC3284&apos;s Blog</title><description>乐于分享</description><link>https://blog.xcqcoo.top/</link><language>zh_CN</language><item><title>X-wrt SSH Open</title><link>https://blog.xcqcoo.top/posts/x-wrt-ssh-open/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-ssh-open/</guid><description>如何开启X-wrt的SSH</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/ssh-open&lt;/p&gt;
 &lt;h1&gt;X-WRT 开启ssh的方法&lt;/h1&gt;
 &lt;p&gt;很多⼈说 X-WRT 的ssh无法登录，这其实是因为默认的ssh没有开启用户登录，大家可以进入界面，进入&lt;a href=&quot;#&quot;&gt;系统-管理权&lt;/a&gt;页面，进入&lt;a href=&quot;#&quot;&gt;SSH访问&lt;/a&gt;标签，开启&lt;strong&gt;密码验证&lt;/strong&gt;和&lt;strong&gt;允许 root 用户凭密码登录&lt;/strong&gt;就可以了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn4.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/ssh-open/ssh1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/ssh-open/ssh1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意请使用谷歌浏览器，火狐浏览器，微软的浏览器，其他浏览器存在不可预知的问题。&lt;/strong&gt;&lt;/p&gt;
 </content:encoded></item><item><title>X-wrt 多拨和负载均衡</title><link>https://blog.xcqcoo.top/posts/x-wrt-duobo/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-duobo/</guid><description>X-wrt 多拨和负载均衡教程</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/master/docs/xwan/&lt;/p&gt;
 &lt;h1&gt;多拨和负载均衡配置教程&lt;/h1&gt;
@@ -10,12 +10,12 @@
 &lt;p&gt;&lt;strong&gt;注意请使用谷歌浏览器，火狐浏览器，微软的浏览器，其他浏览器存在不可预知的问题。&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;1.1 首先，正常设置好wan口拨号上网&lt;/h3&gt;
 &lt;p&gt;在&lt;a href=&quot;#&quot;&gt;网络-接口&lt;/a&gt;页面，编辑&lt;a href=&quot;#&quot;&gt;wan口-基本设置&lt;/a&gt;，选择协议PPPoE，填写宽带账户密码:
-&lt;img src=&quot;https://cdn4.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;修改&lt;a href=&quot;#&quot;&gt;wan口-高级设置&lt;/a&gt;，使用网关跃点 填写&lt;code&gt;40&lt;/code&gt;，&lt;a href=&quot;#&quot;&gt;防火墙设置&lt;/a&gt; 选择wan
-&lt;img src=&quot;https://cdn4.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;1.2 然后，开启多拨&lt;/h3&gt;
 &lt;p&gt;进入&lt;a href=&quot;#&quot;&gt;网络-多拨&lt;/a&gt;页面，开启多拨，填写想要的多拨数，启用自动负载均衡和叠加:
-&lt;img src=&quot;https://cdn4.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;开启多拨后，它会自动设置好负载均衡和叠加，对于高级用户，可以进入&lt;a href=&quot;#&quot;&gt;网络-负载均衡&lt;/a&gt;页面进行高级的调整，小白用户可以忽略。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PS: 这里开启多拨，实际上用的网口就是1.1设置的wan口的接口&lt;/strong&gt;&lt;/p&gt;
 </content:encoded></item><item><title>X-wrt luci-app-fakemesh</title><link>https://blog.xcqcoo.top/posts/x-wrt-luci-app-fakemesh/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-luci-app-fakemesh/</guid><description>X-wrt luci-app-fakemesh介绍及使用教程</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/com.x-wrt/tree/master/luci-app-fakemesh&lt;/p&gt;
@@ -196,7 +196,7 @@ make menuconfig
 
 #2 进入 Target Profile 选择需要编译打包的设备型号，选择型号后立刻退出，保存
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn4.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/build/build-target.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/build/build-target.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;#3 执行下面的命令修复 .config
 sh feeds/x/rom/lede/fix-config.sh
 
@@ -236,7 +236,7 @@ feeds/x/rom/lede/config.x86_generic
 &lt;h2&gt;2. 配置目标&lt;/h2&gt;
 &lt;p&gt;在上述准备好的模版配置文件的基础上，执行&lt;code&gt;make menuconfig&lt;/code&gt;命令进行个性化定制，增删应用。&lt;/p&gt;
 &lt;p&gt;定位到各个子菜单，选择对应的软件包
-&lt;img src=&quot;https://cdn4.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/build//build-m.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/build//build-m.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;3. 执行编译&lt;/h2&gt;
 &lt;p&gt;命令:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;make
