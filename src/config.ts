@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
 	title: "QC3284's Blog",
 	subtitle: "乐于分享",
 	description:
-		"分享一些个人经历即文章和教程的个人技术博客，作者为QC3284",
+		"分享一些个人经历，文章和教程的个人技术博客，作者为QC3284",
 
 	keywords: [],
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
