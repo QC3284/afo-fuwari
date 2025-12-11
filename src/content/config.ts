@@ -20,15 +20,6 @@ const postsCollection = defineCollection({
 	}),
 });
 
-const specCollection = defineCollection({
-	schema: z.object({
-		title: z.string().optional(),
-		published: z.date().optional(),
-		updated: z.date().optional(),
-		draft: z.boolean().optional().default(false),
-	}),
-});
-
 const assetsCollection = defineCollection({
 	type: 'data',
 	schema: z.object({
@@ -39,6 +30,5 @@ const assetsCollection = defineCollection({
 
 export const collections = {
 	posts: postsCollection,
-	spec: specCollection,
 	assets: assetsCollection,
 };
