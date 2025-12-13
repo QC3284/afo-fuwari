@@ -61,7 +61,7 @@ export const siteConfig: SiteConfig = {
                 { url: "https://v-blog.xcqcoo.top", alias: "Vercel" },
                 { url: "https://cf-blog.xcqcoo.top", alias: "Cloudflare" },
                 { url: "https://eo-blog.xcqcoo.top", alias: "EdgeOne" },
-		{ url: "http://localhost:4321", alias: "Dev" }
+                { url: "https://esa-blog.xcqcoo.top", alias: "ALiYun ESA" }
 	],
 };
 
