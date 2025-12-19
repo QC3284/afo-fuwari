@@ -81,6 +81,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "https://umami.acofork.com/share/CdkXbGgZr6ECKOyK", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
+				{
+			name: "流量监控（新）",
+			url: "https://eo.acofork.com", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
 	],
 };
 
