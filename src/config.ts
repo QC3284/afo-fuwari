@@ -75,11 +75,21 @@ export const navBarConfig: NavBarConfig = {
 			url: "/friends/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
 		},
+                {
+                        name: "随机人品",
+                        url: "https://api-ym.xcqcoo.top/lucky.php",
+                        external: true,
+                },
+                {
+                        name: "随机图",
+                        url: "https://api-ym.xcqcoo.top/ecyimg.php",
+                        external: true,
+                },
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://cdn2.xcqcoo.top/gh/QC3284/233@main/yinlang.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "https://cdn-esa-1.xcqcoo.top/gh/QC3284/233@main/yinlang.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "QC3284",
 	bio: "Dare to explore!",
 	links: [
