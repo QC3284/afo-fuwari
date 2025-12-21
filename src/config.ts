@@ -32,12 +32,12 @@ export const siteConfig: SiteConfig = {
 			enable: false, // Display the credit text of the banner image
 			text: "Api3", // Credit text to be displayed
 
-			url: "https://api3-erciyuan-image.xcqcoo.top", // (Optional) URL link to the original artwork or artist's page
+			url: "https://api-ym.xcqcoo.top/ecyimg.php", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	background: {
 		enable: true, // Enable background image
-		src: "https://api3-erciyuan-image.xcqcoo.top", // Background image URL (supports HTTPS)
+		src: "https://api-ym.xcqcoo.top/ecyimg.php", // Background image URL (supports HTTPS)
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
