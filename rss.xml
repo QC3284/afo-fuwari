@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>QC3284&apos;s Blog</title><description>乐于分享</description><link>https://blog.xcqcoo.top/</link><language>zh_CN</language><item><title>X-wrt 多拨和负载均衡</title><link>https://blog.xcqcoo.top/posts/x-wrt-duobo/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-duobo/</guid><description>X-wrt 多拨和负载均衡教程</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/master/docs/xwan/&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>QC3284&apos;s Blog</title><description>乐于分享</description><link>https://blog.xcqcoo.top/</link><language>zh_CN</language><item><title>X-wrt SSH Open</title><link>https://blog.xcqcoo.top/posts/x-wrt-ssh-open/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-ssh-open/</guid><description>如何开启X-wrt的SSH</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/ssh-open&lt;/p&gt;
+&lt;h1&gt;X-WRT 开启ssh的方法&lt;/h1&gt;
+&lt;p&gt;很多⼈说 X-WRT 的ssh无法登录，这其实是因为默认的ssh没有开启用户登录，大家可以进入界面，进入&lt;a href=&quot;#&quot;&gt;系统-管理权&lt;/a&gt;页面，进入&lt;a href=&quot;#&quot;&gt;SSH访问&lt;/a&gt;标签，开启&lt;strong&gt;密码验证&lt;/strong&gt;和&lt;strong&gt;允许 root 用户凭密码登录&lt;/strong&gt;就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/ssh-open/ssh1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意请使用谷歌浏览器，火狐浏览器，微软的浏览器，其他浏览器存在不可预知的问题。&lt;/strong&gt;&lt;/p&gt;
+</content:encoded></item><item><title>X-wrt 多拨和负载均衡</title><link>https://blog.xcqcoo.top/posts/x-wrt-duobo/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-duobo/</guid><description>X-wrt 多拨和负载均衡教程</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/master/docs/xwan/&lt;/p&gt;
 &lt;h1&gt;多拨和负载均衡配置教程&lt;/h1&gt;
 &lt;h2&gt;1. 介绍(单网口多拨)&lt;/h2&gt;
 &lt;p&gt;很多⼈不知道怎么配置OpenWrt多拨，特写⼀个简易的教程，只要你的运营商⽀持多拨，照着这个教程做都可以多拨叠加⽹速。本教程适用于OpenWrt衍生版本&lt;a href=&quot;https://downloads.x-wrt.com/rom/&quot;&gt;X-WRT的固件&lt;/a&gt;。&lt;/p&gt;
@@ -13,11 +18,6 @@
 &lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;开启多拨后，它会自动设置好负载均衡和叠加，对于高级用户，可以进入&lt;a href=&quot;#&quot;&gt;网络-负载均衡&lt;/a&gt;页面进行高级的调整，小白用户可以忽略。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PS: 这里开启多拨，实际上用的网口就是1.1设置的wan口的接口&lt;/strong&gt;&lt;/p&gt;
-</content:encoded></item><item><title>X-wrt SSH Open</title><link>https://blog.xcqcoo.top/posts/x-wrt-ssh-open/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-ssh-open/</guid><description>如何开启X-wrt的SSH</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/ssh-open&lt;/p&gt;
-&lt;h1&gt;X-WRT 开启ssh的方法&lt;/h1&gt;
-&lt;p&gt;很多⼈说 X-WRT 的ssh无法登录，这其实是因为默认的ssh没有开启用户登录，大家可以进入界面，进入&lt;a href=&quot;#&quot;&gt;系统-管理权&lt;/a&gt;页面，进入&lt;a href=&quot;#&quot;&gt;SSH访问&lt;/a&gt;标签，开启&lt;strong&gt;密码验证&lt;/strong&gt;和&lt;strong&gt;允许 root 用户凭密码登录&lt;/strong&gt;就可以了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn2.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/ssh-open/ssh1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意请使用谷歌浏览器，火狐浏览器，微软的浏览器，其他浏览器存在不可预知的问题。&lt;/strong&gt;&lt;/p&gt;
 </content:encoded></item><item><title>X-wrt luci-app-fakemesh</title><link>https://blog.xcqcoo.top/posts/x-wrt-luci-app-fakemesh/</link><guid isPermaLink="true">https://blog.xcqcoo.top/posts/x-wrt-luci-app-fakemesh/</guid><description>X-wrt luci-app-fakemesh介绍及使用教程</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/com.x-wrt/tree/master/luci-app-fakemesh&lt;/p&gt;
 &lt;h2&gt;fakemesh简介&lt;/h2&gt;
 &lt;p&gt;fakemesh是一种网络拓扑结构，由一个&lt;code&gt;控制器（AC）&lt;/code&gt;和一个或多个&lt;code&gt;有线AP（Wired AP）&lt;/code&gt;和&lt;code&gt;卫星（Agent）&lt;/code&gt;组成。它是一种混合了&lt;code&gt;无线Mesh&lt;/code&gt;和&lt;code&gt;AC+AP&lt;/code&gt;两种组网模式的混合网络，其中，&lt;code&gt;有线AP&lt;/code&gt;通过网线和&lt;code&gt;控制器（AC）&lt;/code&gt;相连，而&lt;code&gt;卫星（Agent）&lt;/code&gt;则通过无线STA方式接入，共同构成一个无线（包括有线）覆盖网络。&lt;/p&gt;
