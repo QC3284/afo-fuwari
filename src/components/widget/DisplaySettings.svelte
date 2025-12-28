@@ -117,15 +117,14 @@ onMount(() => {
             </button>
         </div>
         <div class="flex gap-1">
-            <div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-md flex justify-center
-            font-bold text-sm items-center text-[var(--btn-content)]">
-                {Math.round(hue)}
-            </div>
+            <input aria-label="Hue Value" id="hueValue" type="number" min="0" max="360" value={Math.round(hue)} on:input={(e) => hue = e.currentTarget.valueAsNumber} disabled={isRainbowMode}
+                   class="transition bg-[var(--btn-regular-bg)] w-12 h-7 rounded-md text-center font-bold text-sm text-[var(--btn-content)] outline-none"
+            />
         </div>
     </div>
     <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded select-none mb-3">
         <input aria-label="主题色彩" type="range" min="0" max="360" bind:value={hue} disabled={isRainbowMode}
-               class="slider" id="colorSlider" step="5" style="width: 100%">
+               class="slider" id="colorSlider" step="1" style="width: 100%">
     </div>
 
     <div class="flex flex-row gap-2 mb-3 items-center justify-between">
@@ -163,6 +162,13 @@ onMount(() => {
 
 <style lang="stylus">
     #display-setting
+      input[type="number"]
+        -moz-appearance textfield
+        &::-webkit-inner-spin-button
+        &::-webkit-outer-spin-button
+          -webkit-appearance none
+          margin 0
+
       input[type="range"]
         -webkit-appearance none
         height 1.5rem
