@@ -76,15 +76,22 @@ jobs:
           DELETED_COUNT=0
           for VERSION in $VERSIONS_TO_DELETE; do
             echo "正在删除版本: $VERSION"
-            DELETE_RESULT=$(aliyun esa DeleteRoutineCodeVersion --region cn-hangzhou --Name $PAGES_NAME --CodeVersion $VERSION)
-            STATUS=$(echo $DELETE_RESULT | jq -r '.Status')
+            set +e # 临时关闭错误检查，允许命令失败
+            DELETE_RESULT=$(aliyun esa DeleteRoutineCodeVersion --region cn-hangzhou --Name $PAGES_NAME --CodeVersion $VERSION 2>&1)
+            EXIT_CODE=$?
+            set -e # 恢复错误检查
 
-            if [ "$STATUS" = "OK" ]; then
+            if [ $EXIT_CODE -eq 0 ]; then
               echo "版本 $VERSION 删除成功"
               DELETED_COUNT=$((DELETED_COUNT + 1))
             else
-              echo "版本 $VERSION 删除失败: $DELETE_RESULT"
-              exit 1
+              # 检查是否因为版本正在使用中而失败
+              if echo "$DELETE_RESULT" | grep -q "CodeVersionInUse"; then
+                echo "⚠️ 版本 $VERSION 正在使用中，无法删除 (CodeVersionInUse)，跳过此版本"
+              else
+                echo "❌ 版本 $VERSION 删除失败: $DELETE_RESULT"
+                exit 1
+              fi
             fi
           done
 
