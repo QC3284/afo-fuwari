@@ -85,7 +85,8 @@ function extractImageReferences(content) {
 	// 但如果是本地文件引用，可能直接就是路径
 	
 	// 1. 匹配标准 Markdown 图片 ![...](...)
-	const markdownImageRegex = /!\[.*?\]\((.*?)\)/g;
+	// 修复：支持 URL 中包含一层括号，例如 image(1).png
+	const markdownImageRegex = /!\[.*?\]\(((?:[^()]+|\([^()]*\))+)\)/g;
 	while ((match = markdownImageRegex.exec(content)) !== null) {
 		let url = match[1].trim();
 		// 如果 URL 包含 title 部分 (例如 "path/to/image.png" "Title")，去除 title
