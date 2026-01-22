@@ -2,7 +2,7 @@
 title: MLinux Minimal 说明文档
 published: 2024-08-09
 description: 'MLinux Minimal微型Linux发行版的构建指南，包含依赖说明、配置选项与运行方法'
-image: ../img/mlinux-project-tx.png
+image: '../assets/images/mlinux-project-tx.png'
 tags: [mlinux, linux, 发行版, 编译]
 category: '文档'
 draft: false

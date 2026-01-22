@@ -2,7 +2,7 @@
 title: 如何编译X-WRT
 published: 2024-08-08
 description: '从环境准备到编译完成的完整指南，帮助用户编译自定义的X-WRT固件'
-image: ../img/x-wrt-tx.png
+image: '../assets/images/x-wrt-tx.png'
 tags: [x-wrt, 编译, openwrt, 教程]
 category: '教程'
 draft: false
@@ -69,7 +69,7 @@ make menuconfig
 #2 进入 Target Profile 选择需要编译打包的设备型号，选择型号后立刻退出，保存
 ```
 
-![](https://cdn3.xcqcoo.top/jsd/gh/x-wrt/x-wrt.github.io@master/docs/build/build-target.png)
+![](https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/build/build-target.png)
 
 ```sh
 #3 执行下面的命令修复 .config
@@ -115,7 +115,7 @@ feeds/x/rom/lede/config.x86_generic
 在上述准备好的模版配置文件的基础上，执行`make menuconfig`命令进行个性化定制，增删应用。
 
 定位到各个子菜单，选择对应的软件包
-![](https://cdn3.xcqcoo.top/jsd/gh/x-wrt/x-wrt.github.io@master/docs/build//build-m.png)
+![](https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/build//build-m.png)
 
 ## 3. 执行编译
 命令:

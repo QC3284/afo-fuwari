@@ -2,7 +2,7 @@
 title: iStoreOS README
 published: 2024-08-08
 description: '介绍iStoreOS系统的特点、版本区别、支持硬件及使用方法，一个基于OpenWRT的轻NAS与路由系统'
-image: ../img/istoreos-web-logo.png
+image: '../assets/images/istoreos-web-logo.png'
 tags: [istoreos, openwrt, nas, 路由器]
 category: '介绍'
 draft: false

@@ -2,7 +2,7 @@
 title: (x-wrt）luci-app-fakemesh
 published: 2024-08-09
 description: '介绍了fakemesh这种混合网络拓扑结构的基本概念、配置方法与使用技巧，适用于X-WRT系统'
-image: "https://avatars-githubusercontent-com.xcqcoo.top/u/46189526?s=48&v=4"
+image: "../assets/images/x-wrt-tx.png"
 tags: [x-wrt, fakemesh, 网络, 教程]
 category: '教程'
 draft: false

@@ -2,7 +2,7 @@
 title: OpenWrt 说明文档
 published: 2024-08-08
 description: 'OpenWrt官方说明文档中文版，介绍系统特点、下载、编译与社区资源'
-image: ../img/openwrt-logo.png
+image: '../assets/images/openwrt-logo.png'
 tags: [openwrt, linux, 路由器, 文档]
 category: '文档'
 draft: false

@@ -2,7 +2,7 @@
 title: （x-wrt）SSH-open
 published: 2024-08-09
 description: '在X-WRT系统中开启SSH登录的简单步骤，解决默认无法登录的问题'
-image: ../img/x-wrt-tx.png
+image: '../assets/images/x-wrt-tx.png'
 tags: [x-wrt, ssh, 安全, 教程]
 category: '教程'
 draft: false

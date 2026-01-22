@@ -2,7 +2,7 @@
 title: 自己动手编译 OpenWRT
 published: 2024-08-08
 description: "编译自定义OpenWRT固件的过程，包含环境搭建与编译步骤'
-image: ../img/openwrt-logo.png
+image: '../assets/images/openwrt-logo.png'
 tags: [openwrt, 编译, 校园网, 教程]
 category: '教程'
 draft: false

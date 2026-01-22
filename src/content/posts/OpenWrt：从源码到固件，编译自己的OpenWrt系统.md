@@ -2,7 +2,7 @@
 title: OpenWrt：从源码到固件，编译自己的OpenWrt系统
 published: 2024-08-08
 description: '一步步指导如何从源码编译自定义OpenWrt固件，涵盖环境准备、配置与编译全过程'
-image: ../img/openwrt-logo.png
+image: '../assets/images/openwrt-logo.png'
 tags: [openwrt, 编译, 源码, 教程]
 category: '教程'
 draft: false
