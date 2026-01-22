@@ -6,7 +6,7 @@ image: '../assets/images/openwrt-logo.png'
 tags: [openwrt, 编译, 校园网, 教程]
 category: '教程'
 draft: false
-lang: ''
+lang: ""
 ---
 
 文章来源：https://lgiki.net/post/compile-openwrt/
