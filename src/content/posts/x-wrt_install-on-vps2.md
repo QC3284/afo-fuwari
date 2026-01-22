@@ -2,7 +2,7 @@
 title: (x-wrt）install-on-vps2
 published: 2024-08-09
 description: '详细教程：如何将X-WRT系统部署到云服务器（VPS），支持多种主流云服务商'
-image: 'assets/images/x-wrt-tx.png'
+image: '../assets/images/x-wrt-tx.png'
 tags: [x-wrt, vps, 刷机, 教程]
 category: '教程'
 draft: false
