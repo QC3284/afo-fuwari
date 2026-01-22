@@ -9,7 +9,6 @@ draft: false
 lang: ''
 ---
 
-
 # MLinux Minimal - 微型 Linux 发行版  
 
 <img src="https://ghproxy2.xcqcoo.top/https://raw.githubusercontent.com/mlinux-project/.github/main/images/mlinux-minimal.svg" width="25%" alt="MLinux Minimal">  

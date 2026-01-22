@@ -9,7 +9,6 @@ draft: false
 lang: ''
 ---
 
-
 文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/install-on-vps2
 
 # X-WRT 安装部署到VPS上(新)
