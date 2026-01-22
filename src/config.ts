@@ -104,7 +104,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "https://cdn-esa-1.xcqcoo.top/gh/QC3284/233@main/yinlang.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "二叉树树",
+	name: "QC3284",
 	bio: "Enjoys sharing.",
 	links: [
 		{
