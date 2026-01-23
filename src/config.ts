@@ -37,7 +37,7 @@ export const siteConfig: SiteConfig = {
 	},
 	background: {
 		enable: true, // Enable background image
-		src: "https://api-ym.xcqcoo.top/ecyimg.js", // Background image URL (supports HTTPS)
+		src: "https://api-ym.xcqcoo.top/get-background.php", // Background image URL (supports HTTPS)
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
@@ -63,7 +63,7 @@ export const siteConfig: SiteConfig = {
 	server: [
 		{ url: "", text: "Blog" },
 		{ url: "https://umami.3284123.xyz", text: "Umami" },
-		{ url: "https://api-ym.xcqcoo.top/ecyimg.js", text: "RandomPic" },
+		{ url: "https://api-ym.xcqcoo.top/get-background.php", text: "RandomPic" },
 	],
 };
 
@@ -92,7 +92,7 @@ export const navBarConfig: NavBarConfig = {
 //			external: true, // Show an external link icon and will open in a new tab
 //		},
 		{	name: "随机图",
-			url: "https://api-ym.xcqcoo.top/ecyimg.js", // Internal links should not include the base path, as it is automatically added
+			url: "https://api-ym.xcqcoo.top/get-background.php", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{	name: "随机人品",
