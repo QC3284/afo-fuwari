@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>QC3284&apos;s Blog</title><description>乐于分享</description><link>https://blog.acofork.com/</link><language>zh_CN</language><item><title>（x-wrt）SSH-open</title><link>https://blog.acofork.com/posts/x-wrt_ssh-open/</link><guid isPermaLink="true">https://blog.acofork.com/posts/x-wrt_ssh-open/</guid><description>在X-WRT系统中开启SSH登录的简单步骤，解决默认无法登录的问题</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/ssh-open&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>QC3284&apos;s Blog</title><description>乐于分享</description><link>https://blog.3284123.xyz/</link><language>zh_CN</language><item><title>（x-wrt）SSH-open</title><link>https://blog.3284123.xyz/posts/x-wrt_ssh-open/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/x-wrt_ssh-open/</guid><description>在X-WRT系统中开启SSH登录的简单步骤，解决默认无法登录的问题</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/ssh-open&lt;/p&gt;
 &lt;h1&gt;X-WRT 开启ssh的方法&lt;/h1&gt;
 &lt;p&gt;很多⼈说 X-WRT 的ssh无法登录，这其实是因为默认的ssh没有开启用户登录，大家可以进入界面，进入&lt;a href=&quot;#&quot;&gt;系统-管理权&lt;/a&gt;页面，进入&lt;a href=&quot;#&quot;&gt;SSH访问&lt;/a&gt;标签，开启&lt;strong&gt;密码验证&lt;/strong&gt;和&lt;strong&gt;允许 root 用户凭密码登录&lt;/strong&gt;就可以了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/ssh-open/ssh1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意请使用谷歌浏览器，火狐浏览器，微软的浏览器，其他浏览器存在不可预知的问题。&lt;/strong&gt;&lt;/p&gt;
-</content:encoded></item><item><title>（x-wrt）多拨和负载均衡配置教程</title><link>https://blog.acofork.com/posts/x-wrt%E5%A4%9A%E6%8B%A8%E5%92%8C%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</link><guid isPermaLink="true">https://blog.acofork.com/posts/x-wrt%E5%A4%9A%E6%8B%A8%E5%92%8C%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</guid><description>在X-WRT系统上配置多拨上网与负载均衡的简易教程，适用于支持多拨的运营商网络</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/master/docs/xwan/&lt;/p&gt;
+</content:encoded></item><item><title>（x-wrt）多拨和负载均衡配置教程</title><link>https://blog.3284123.xyz/posts/x-wrt%E5%A4%9A%E6%8B%A8%E5%92%8C%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/x-wrt%E5%A4%9A%E6%8B%A8%E5%92%8C%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</guid><description>在X-WRT系统上配置多拨上网与负载均衡的简易教程，适用于支持多拨的运营商网络</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/master/docs/xwan/&lt;/p&gt;
 &lt;h1&gt;多拨和负载均衡配置教程&lt;/h1&gt;
 &lt;h2&gt;1. 介绍(单网口多拨)&lt;/h2&gt;
 &lt;p&gt;很多⼈不知道怎么配置OpenWrt多拨，特写⼀个简易的教程，只要你的运营商⽀持多拨，照着这个教程做都可以多拨叠加⽹速。本教程适用于OpenWrt衍生版本&lt;a href=&quot;https://downloads.x-wrt.com/rom/&quot;&gt;X-WRT的固件&lt;/a&gt;。&lt;/p&gt;
@@ -18,7 +18,7 @@
 &lt;img src=&quot;https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;开启多拨后，它会自动设置好负载均衡和叠加，对于高级用户，可以进入&lt;a href=&quot;#&quot;&gt;网络-负载均衡&lt;/a&gt;页面进行高级的调整，小白用户可以忽略。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PS: 这里开启多拨，实际上用的网口就是1.1设置的wan口的接口&lt;/strong&gt;&lt;/p&gt;
-</content:encoded></item><item><title>(x-wrt）luci-app-fakemesh</title><link>https://blog.acofork.com/posts/x-wr_luci-app-fakemesh/</link><guid isPermaLink="true">https://blog.acofork.com/posts/x-wr_luci-app-fakemesh/</guid><description>介绍了fakemesh这种混合网络拓扑结构的基本概念、配置方法与使用技巧，适用于X-WRT系统</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/com.x-wrt/tree/master/luci-app-fakemesh&lt;/p&gt;
+</content:encoded></item><item><title>(x-wrt）luci-app-fakemesh</title><link>https://blog.3284123.xyz/posts/x-wr_luci-app-fakemesh/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/x-wr_luci-app-fakemesh/</guid><description>介绍了fakemesh这种混合网络拓扑结构的基本概念、配置方法与使用技巧，适用于X-WRT系统</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/com.x-wrt/tree/master/luci-app-fakemesh&lt;/p&gt;
 &lt;h2&gt;fakemesh简介&lt;/h2&gt;
 &lt;p&gt;fakemesh是一种网络拓扑结构，由一个&lt;code&gt;控制器（AC）&lt;/code&gt;和一个或多个&lt;code&gt;有线AP（Wired AP）&lt;/code&gt;和&lt;code&gt;卫星（Agent）&lt;/code&gt;组成。它是一种混合了&lt;code&gt;无线Mesh&lt;/code&gt;和&lt;code&gt;AC+AP&lt;/code&gt;两种组网模式的混合网络，其中，&lt;code&gt;有线AP&lt;/code&gt;通过网线和&lt;code&gt;控制器（AC）&lt;/code&gt;相连，而&lt;code&gt;卫星（Agent）&lt;/code&gt;则通过无线STA方式接入，共同构成一个无线（包括有线）覆盖网络。&lt;/p&gt;
 &lt;p&gt;fakemesh的部署确实相对较为方便，只需要将节点设备连接到正确的网络，并设置节点设备的角色，Mesh ID等信息即可。因为fakemesh结合了无线Mesh和AC+AP两种组网模式，所以也可以很方便地进行混合组网，提高了网络的覆盖范围和可靠性。&lt;/p&gt;
@@ -66,7 +66,7 @@ PASSWD: 88888888
 &lt;p&gt;可以在控制器界面上统一管理无线，包括增删SSID，设置SSID的加密方式，频宽。&lt;/p&gt;
 &lt;h2&gt;控制器(Controller)旁路部署&lt;/h2&gt;
 &lt;p&gt;需要注意的是，如果控制器不作为网关出口并且不提供DHCP服务，用户需要手动配置网络设置，包括设置控制器的LAN口IP地址、网关IP和DNS。此外，通常控制器的LAN口会默认启用DHCP客户端，从第三方网关获取IP和网关，如果需要使用静态IP，则需要保证控制器和第三方网关在同一个网段且可以相互通信。否则，就无法实现控制器与其他AP的同步配置。&lt;/p&gt;
-</content:encoded></item><item><title>MLinux Minimal 说明文档</title><link>https://blog.acofork.com/posts/mlinux-minimal-readme-zh_cn/</link><guid isPermaLink="true">https://blog.acofork.com/posts/mlinux-minimal-readme-zh_cn/</guid><description>MLinux Minimal微型Linux发行版的构建指南，包含依赖说明、配置选项与运行方法</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;MLinux Minimal - 微型 Linux 发行版&lt;/h1&gt;
+</content:encoded></item><item><title>MLinux Minimal 说明文档</title><link>https://blog.3284123.xyz/posts/mlinux-minimal-readme-zh_cn/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/mlinux-minimal-readme-zh_cn/</guid><description>MLinux Minimal微型Linux发行版的构建指南，包含依赖说明、配置选项与运行方法</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;MLinux Minimal - 微型 Linux 发行版&lt;/h1&gt;
 &lt;p&gt;&amp;lt;img src=&quot;https://ghproxy2.xcqcoo.top/https://raw.githubusercontent.com/mlinux-project/.github/main/images/mlinux-minimal.svg&quot; width=&quot;25%&quot; alt=&quot;MLinux Minimal&quot;&amp;gt;&lt;/p&gt;
 &lt;h2&gt;依赖项&lt;/h2&gt;
 &lt;h3&gt;编译二进制文件所需&lt;/h3&gt;
@@ -379,7 +379,7 @@ make -j$(nproc)
 &lt;li&gt;&lt;strong&gt;错误修正&lt;/strong&gt;：修正原文件中的拼写错误（如 &lt;code&gt;platfrom&lt;/code&gt; → &lt;strong&gt;platform&lt;/strong&gt;），并规范标点使用。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;功能验证&lt;/strong&gt;：所有命令和链接均保持原样，确保操作有效性。&lt;/li&gt;
 &lt;/ol&gt;
-</content:encoded></item><item><title>(x-wrt）install-on-vps2</title><link>https://blog.acofork.com/posts/x-wrt_install-on-vps2/</link><guid isPermaLink="true">https://blog.acofork.com/posts/x-wrt_install-on-vps2/</guid><description>详细教程：如何将X-WRT系统部署到云服务器（VPS），支持多种主流云服务商</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/install-on-vps2&lt;/p&gt;
+</content:encoded></item><item><title>(x-wrt）install-on-vps2</title><link>https://blog.3284123.xyz/posts/x-wrt_install-on-vps2/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/x-wrt_install-on-vps2/</guid><description>详细教程：如何将X-WRT系统部署到云服务器（VPS），支持多种主流云服务商</description><pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/install-on-vps2&lt;/p&gt;
 &lt;h1&gt;X-WRT 安装部署到VPS上(新)&lt;/h1&gt;
 &lt;h3&gt;1. 介绍:&lt;/h3&gt;
 &lt;p&gt;本教程旨在介绍如何将 X-WRT 系统部署到云服务器（VPS）上。X-WRT 是一个专为路由器设计的开源系统，具有出色的网络转发优化和友好的配置界面。同时，该系统还提供了许多方便的服务，如 OpenVPN 等，可以轻松地一键部署。&lt;/p&gt;
@@ -461,7 +461,7 @@ uci commit network
 &lt;li&gt;重启(reboot)并等待自动安装完成&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;系统重启后，你将能够通过访问 X-WRT 的管理界面来配置路由器。以本文的例子为例，管理界面的地址(HTTPS)是 &lt;code&gt;https://[VPS_IP]/&lt;/code&gt;。进入管理界面后，你需要立即修改默认的管理密码。默认的账号/密码是 admin/admin。此外，如果需要，你可以进入系统管理页面，启用 SSH 账户密码登录，并设置防火墙以允许来自 WAN 区域的22端口访问。这样可以使你能够远程登录到路由器并进行更多的配置。&lt;/p&gt;
-</content:encoded></item><item><title>OpenWrt 说明文档</title><link>https://blog.acofork.com/posts/openwrt-%E7%9A%84readme-zh_cn/</link><guid isPermaLink="true">https://blog.acofork.com/posts/openwrt-%E7%9A%84readme-zh_cn/</guid><description>OpenWrt官方说明文档中文版，介绍系统特点、下载、编译与社区资源</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://cdn-esa-1.xcqcoo.top/gh/openwrt/openwrt@main/include/logo.png&quot; alt=&quot;OpenWrt logo&quot; /&gt;&lt;/p&gt;
+</content:encoded></item><item><title>OpenWrt 说明文档</title><link>https://blog.3284123.xyz/posts/openwrt-%E7%9A%84readme-zh_cn/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/openwrt-%E7%9A%84readme-zh_cn/</guid><description>OpenWrt官方说明文档中文版，介绍系统特点、下载、编译与社区资源</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://cdn-esa-1.xcqcoo.top/gh/openwrt/openwrt@main/include/logo.png&quot; alt=&quot;OpenWrt logo&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;OpenWrt 项目是一个面向嵌入式设备的 Linux 操作系统。它并非提供单一的静态固件，而是通过完全可写的文件系统与包管理机制，赋予用户自由选择应用和配置的能力。这意味着您可以摆脱厂商预置的限制，通过安装软件包定制设备功能，满足任何应用场景需求。对于开发者，OpenWrt 提供了一个无需构建完整固件的开发框架；对于用户，则意味着能够以厂商未曾设想的方式实现设备的全面定制。&lt;/p&gt;
 &lt;h2&gt;下载&lt;/h2&gt;
 &lt;p&gt;我们为多种架构提供了预编译的固件镜像，默认包含适用于家用无线路由器的软件包。若需快速找到从厂商原厂固件迁移至 OpenWrt 的可用出厂镜像，请使用 &lt;strong&gt;固件选择器&lt;/strong&gt;：&lt;/p&gt;
@@ -528,7 +528,7 @@ make4.1+ perl python3.7+ rsync subversion unzip which
 &lt;li&gt;&lt;strong&gt;语句优化&lt;/strong&gt;：在保持原意的基础上，调整部分长句结构以提高中文可读性。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;功能验证&lt;/strong&gt;：所有外部链接均未修改，确保跳转功能正常。&lt;/li&gt;
 &lt;/ol&gt;
-</content:encoded></item><item><title>iStoreOS README</title><link>https://blog.acofork.com/posts/istoreos-readme/</link><guid isPermaLink="true">https://blog.acofork.com/posts/istoreos-readme/</guid><description>介绍iStoreOS系统的特点、版本区别、支持硬件及使用方法，一个基于OpenWRT的轻NAS与路由系统</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;iStoreOS 固件&lt;/h1&gt;
+</content:encoded></item><item><title>iStoreOS README</title><link>https://blog.3284123.xyz/posts/istoreos-readme/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/istoreos-readme/</guid><description>介绍iStoreOS系统的特点、版本区别、支持硬件及使用方法，一个基于OpenWRT的轻NAS与路由系统</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;iStoreOS 固件&lt;/h1&gt;
 &lt;p&gt;iStoreOS 目标是提供一个人人会用的路由兼轻 NAS 系统，不管是作为路由还是 NAS，你都有相似的操作体验。&lt;/p&gt;
 &lt;p&gt;系统本身开源免费，目前系统代码开源在：&lt;a href=&quot;https://www.github.com/istoreos/istoreos&quot;&gt;Github iStoreOS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;iStoreOS 来源于 OpenWRT，相较于原版 OpenWRT，iStoreOS 具有以下优势：&lt;/p&gt;
@@ -654,7 +654,7 @@ opkg install *.ipk
 &lt;li&gt;众多 OpenWRT 的固件或者插件开发者&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.koolcenter.com&quot;&gt;KoolCenter&lt;/a&gt;，&lt;a href=&quot;https://www.linkease.com&quot;&gt;易有云&lt;/a&gt; 团队相关同事&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded></item><item><title>OpenWrt：从源码到固件，编译自己的OpenWrt系统</title><link>https://blog.acofork.com/posts/openwrt%E4%BB%8E%E6%BA%90%E7%A0%81%E5%88%B0%E5%9B%BA%E4%BB%B6%E7%BC%96%E8%AF%91%E8%87%AA%E5%B7%B1%E7%9A%84openwrt%E7%B3%BB%E7%BB%9F/</link><guid isPermaLink="true">https://blog.acofork.com/posts/openwrt%E4%BB%8E%E6%BA%90%E7%A0%81%E5%88%B0%E5%9B%BA%E4%BB%B6%E7%BC%96%E8%AF%91%E8%87%AA%E5%B7%B1%E7%9A%84openwrt%E7%B3%BB%E7%BB%9F/</guid><description>一步步指导如何从源码编译自定义OpenWrt固件，涵盖环境准备、配置与编译全过程</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;本文说明如何一步一步地从源码编译出自己的OpenWrt镜像
+</content:encoded></item><item><title>OpenWrt：从源码到固件，编译自己的OpenWrt系统</title><link>https://blog.3284123.xyz/posts/openwrt%E4%BB%8E%E6%BA%90%E7%A0%81%E5%88%B0%E5%9B%BA%E4%BB%B6%E7%BC%96%E8%AF%91%E8%87%AA%E5%B7%B1%E7%9A%84openwrt%E7%B3%BB%E7%BB%9F/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/openwrt%E4%BB%8E%E6%BA%90%E7%A0%81%E5%88%B0%E5%9B%BA%E4%BB%B6%E7%BC%96%E8%AF%91%E8%87%AA%E5%B7%B1%E7%9A%84openwrt%E7%B3%BB%E7%BB%9F/</guid><description>一步步指导如何从源码编译自定义OpenWrt固件，涵盖环境准备、配置与编译全过程</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;本文说明如何一步一步地从源码编译出自己的OpenWrt镜像
 文章来源：知乎@小耸&lt;/p&gt;
 &lt;h1&gt;准备工作&lt;/h1&gt;
 &lt;p&gt;准备一个GNU/Linux, BSD 或 MacOSX 操作系统。并且，在环境中准备好以下官方教程中要求的工具：
@@ -708,7 +708,7 @@ git checkout v23.05.4
 1.factory：用于替换厂商的原厂固件，兼容原厂的安装包格式。通常使用原厂的web GUI进行升级或在Uboot中刷入。
 2.sysupgrade：用于升级替换已有的OpenWrt版本，这是最常用的镜像。
 3.initramfs-kernel：用于开发或特殊情况下的一次性引导，作为安装常规sysupgrade版本的过渡步骤。由于initramfs版本完全运行在RAM中，不会在闪存中存储任何设置，因此不适合用于操作性使用。&lt;/p&gt;
-</content:encoded></item><item><title>自己动手编译 OpenWRT</title><link>https://blog.acofork.com/posts/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E7%BC%96%E8%AF%91-openwrt/</link><guid isPermaLink="true">https://blog.acofork.com/posts/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E7%BC%96%E8%AF%91-openwrt/</guid><description>编译自定义OpenWRT固件的过程，包含环境搭建与编译步骤</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://lgiki.net/post/compile-openwrt/&lt;/p&gt;
+</content:encoded></item><item><title>自己动手编译 OpenWRT</title><link>https://blog.3284123.xyz/posts/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E7%BC%96%E8%AF%91-openwrt/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E7%BC%96%E8%AF%91-openwrt/</guid><description>编译自定义OpenWRT固件的过程，包含环境搭建与编译步骤</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://lgiki.net/post/compile-openwrt/&lt;/p&gt;
 &lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;学校最近升级了校园网设备，终于从年久失修的龟速 100Mbps 升级到了 1Gbps，尽管还是使用锐捷的 ePortal 网页认证，还能通过简单的 Shell 脚本在路由器上自动认证，但新设备却限制了每个用户最多只能同时有两台设备在线，使用路由器会被检测出使用多设备，并被加入黑名单，被断网。&lt;/p&gt;
 &lt;p&gt;都 2023 年了，随便手机、电脑再加个平板就仨设备了，更不用说可能还有 Kindle、Switch 等其他设备，只能同时两台设备在线怎么可能满足学生正常使用校园网的需求。更何况，计算机专业的学生可能还会使用虚拟机等软件，但虚拟机类的软件也可能被检测为是多设备同时在线，所以你让计算机专业的学生拿啥学习呢，内存条含嘴里脑补画面吗？&lt;/p&gt;
@@ -775,7 +775,7 @@ make V=s -j8
 &lt;p&gt;编译完成之后，在&lt;code&gt;./bin/targets&lt;/code&gt;下就可以找到固件以及相应的&lt;code&gt;ipk&lt;/code&gt;包了。&lt;/p&gt;
 &lt;h2&gt;UA2F 的注意事项&lt;/h2&gt;
 &lt;p&gt;要使 UA2F 正常工作需要关闭 “网络”——“Turbo ACC 网络加速设置” 下的所有选项，否则 UA2F 无法正常工作，具体表现为：重启路由器防火墙之后，第一次 HTTP 请求的 User-Agent 成功修改，但后续 HTTP 请求的 User-Agent 没有被修改。&lt;/p&gt;
-</content:encoded></item><item><title>如何编译X-WRT</title><link>https://blog.acofork.com/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E8%AF%91x-wrt/</link><guid isPermaLink="true">https://blog.acofork.com/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E8%AF%91x-wrt/</guid><description>从环境准备到编译完成的完整指南，帮助用户编译自定义的X-WRT固件</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/build&lt;/p&gt;
+</content:encoded></item><item><title>如何编译X-WRT</title><link>https://blog.3284123.xyz/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E8%AF%91x-wrt/</link><guid isPermaLink="true">https://blog.3284123.xyz/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E8%AF%91x-wrt/</guid><description>从环境准备到编译完成的完整指南，帮助用户编译自定义的X-WRT固件</description><pubDate>Thu, 08 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;文章来源：https://github.com/x-wrt/x-wrt.github.io/tree/master/docs/build&lt;/p&gt;
 &lt;h1&gt;编译教程&lt;/h1&gt;
 &lt;p&gt;很多人不知道怎样编译一个自己的固件，这里主要简单介绍大概的编译打包流程，具体的情况还需要大家自己发挥，情况千变万化，大家随机应变。&lt;/p&gt;
 &lt;h2&gt;1 编译准备&lt;/h2&gt;
