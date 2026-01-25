@@ -37,7 +37,7 @@ export const siteConfig: SiteConfig = {
 	},
 	background: {
 		enable: true, // Enable background image
-		src: "https://pic-eo-1.xcqcoo.top/pic?img=ua", // Background image URL (supports HTTPS)
+		src: "https://pic-eo-1.xcqcoo.top/random.js", // Background image URL (supports HTTPS)
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
@@ -63,7 +63,7 @@ export const siteConfig: SiteConfig = {
 	server: [
 		{ url: "", text: "Blog" },
 		{ url: "https://umami.3284123.xyz", text: "Umami" },
-		{ url: "https://pic-eo-1.xcqcoo.top/pic?img=ua", text: "RandomPic" },
+		{ url: "https://pic-eo-1.xcqcoo.top", text: "RandomPic" },
 	],
 };
 
@@ -91,8 +91,8 @@ export const navBarConfig: NavBarConfig = {
 //			url: "https://status.acofork.com", // Internal links should not include the base path, as it is automatically added
 //			external: true, // Show an external link icon and will open in a new tab
 //		},
-		{	name: "随机图",
-			url: "https://pic-eo-1.xcqcoo.top/pic?img=ua", // Internal links should not include the base path, as it is automatically added
+		{	name: "随机图Api",
+			url: "https://https://pic-eo-1.xcqcoo.top/", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{	name: "随机人品",
