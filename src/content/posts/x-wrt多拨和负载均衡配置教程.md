@@ -20,14 +20,14 @@ lang: ''
 
 ### 1.1 首先，正常设置好wan口拨号上网
 在[网络-接口](#)页面，编辑[wan口-基本设置](#)，选择协议PPPoE，填写宽带账户密码:
-![](https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe1.png)
+![](https://cdn-esa-cn-1.3284123.xyz/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe1.png)
 
 修改[wan口-高级设置](#)，使用网关跃点 填写`40`，[防火墙设置](#) 选择wan
-![](https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe2.png)
+![](https://cdn-esa-cn-1.3284123.xyz/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan-pppoe2.png)
 
 ### 1.2 然后，开启多拨
 进入[网络-多拨](#)页面，开启多拨，填写想要的多拨数，启用自动负载均衡和叠加:
-![](https://cdn-esa-1.xcqcoo.top/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan1.png)
+![](https://cdn-esa-cn-1.3284123.xyz/gh/x-wrt/x-wrt.github.io@master/docs/xwan/xwan1.png)
 
 开启多拨后，它会自动设置好负载均衡和叠加，对于高级用户，可以进入[网络-负载均衡](#)页面进行高级的调整，小白用户可以忽略。
 
