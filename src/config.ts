@@ -9,74 +9,57 @@ import type {
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
-const customDomain = "2x.nz";
+const customDomain = "blog.3284123.xyz";
 
 export const siteConfig: SiteConfig = {
 	customDomain,
-	title: "《二叉树树》官方网站",
-	subtitle: "AcoFork",
+	title: "QC3284's Blog",
+	subtitle: "乐于分享",
 	description:
-		"《二叉树树》是一个专注于IT/互联网技术分享与实践的个人技术博客，在这里你可以找到众多前沿技术的分享与实践经验。",
+		"分享一些个人经历，文章和教程的个人技术博客，作者为QC3284",
 
-	keywords: [
-		"二叉树树",
-		"二叉树树官网",
-		"树",
-		"二叉树",
-		"二叉",
-		"博客",
-		"AcoFork Blog",
-		"AcoFork",
-		"Blog",
-		"acofork blog",
-		"acofork",
-		"blog",
-	],
-	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+	keywords: [],
+	lang: "zh_CN",
 	themeColor: {
-		hue: 255, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: true, // Hide the theme color picker for visitors
+		hue: 215,
+		fixed: false,
 	},
 	banner: {
 		enable: false,
-		src: "/xinghui.avif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		src: "/xinghui.avif",
+		position: "center",
 		credit: {
-			enable: true, // Display the credit text of the banner image
-			text: "Pixiv @chokei", // Credit text to be displayed
-
-			url: "https://www.pixiv.net/artworks/122782209", // (Optional) URL link to the original artwork or artist's page
+			enable: true,
+			text: "Pixiv @chokei",
+			url: "https://www.pixiv.net/artworks/122782209",
 		},
 	},
 	background: {
-		enable: false, // Enable background image
-		src: "", // Background image URL (supports HTTPS)
-		position: "center", // Background position: 'top', 'center', 'bottom'
-		size: "cover", // Background size: 'cover', 'contain', 'auto'
-		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
-		attachment: "fixed", // Background attachment: 'fixed', 'scroll', 'local'
-		opacity: 1, // Background opacity (0-1)
+		enable: true,
+		src: "https://pic-eo-1.xcqcoo.top/random.js",
+		position: "center",
+		size: "cover",
+		repeat: "no-repeat",
+		attachment: "fixed",
+		opacity: 1,
 	},
 	toc: {
-		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		enable: true,
+		depth: 2,
 	},
 	favicon: [
-		// Leave this array empty to use the default favicon
 		{
-			src: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Path of the favicon, relative to the /public directory
-			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+			src: "https://cdn-esa-cn-1.3284123.xyz/gh/QC3284/233@main/yinlang.jpg",
 		},
 	],
 	officialSites: [
-		{ url: "https://acofork.com", alias: "CN" },
-		{ url: `https://${customDomain}`, alias: "Global" },
+		{ url: "https://blog.3284123.xyz", alias: "CN" },
+		{ url: "https://cf-blog.xcqcoo.top", alias: "Global" },
 	],
 	server: [
 		{ url: "", text: "Blog" },
-		{ url: `https://u.${customDomain}`, text: "Umami" },
-		{ url: `https://p.${customDomain}`, text: "RandomPic" },
+		{ url: "https://umami.3284123.xyz", text: "Umami" },
+		{ url: "https://pic-eo-1.xcqcoo.top", text: "RandomPic" },
 	],
 };
 
@@ -88,64 +71,39 @@ export const navBarConfig: NavBarConfig = {
 			name: "友链",
 			url: "/friends/",
 			external: false,
-			icon: "material-symbols:group-outline-rounded",
-		},
-		{
-			name: "赞助",
-			url: "/sponsors/",
-			external: false,
-			icon: "material-symbols:volunteer-activism-outline-rounded",
-		},
-		{
-			name: "工具",
-			url: "/tools/",
-			external: false,
-			icon: "material-symbols:build-outline-rounded",
 		},
 		{
 			name: "统计",
-			url: `https://u.${customDomain}/share/CdkXbGgZr6ECKOyK`,
+			url: "https://umami.3284123.xyz/share/21i0HxSvjaEWAGfU",
 			external: true,
-			icon: "material-symbols:table-chart",
 		},
 		{
-			name: "论坛",
-			url: "/forum/",
-			external: false,
-			icon: "material-symbols:forum-outline-rounded",
+			name: "随机图Api",
+			url: "https://pic-eo-1.xcqcoo.top/",
+			external: true,
+		},
+		{
+			name: "随机人品",
+			url: "https://api-ym.xcqcoo.top/lucky.php",
+			external: true,
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "二叉树树",
-	bio: "Protect What You Love.",
+	avatar: "https://cdn-esa-cn-1.3284123.xyz/gh/QC3284/233@main/yinlang.jpg",
+	name: "QC3284",
+	bio: "Enjoys sharing.",
 	links: [
-		{
-			name: "QQ",
-			icon: "simple-icons:qq",
-			url: "https://qm.qq.com/q/FWqOHlwL2m",
-		},
-		{
-			name: "Telegram",
-			icon: "simple-icons:telegram",
-			url: "https://t.me/+_07DERp7k1ljYTc1",
-		},
 		{
 			name: "Bilibli",
 			icon: "simple-icons:bilibili",
-			url: "https://space.bilibili.com/325903362",
+			url: "https://space.bilibili.com/510234024",
 		},
 		{
 			name: "GitHub",
 			icon: "simple-icons:github",
-			url: "https://github.com/afoim",
-		},
-		{
-			name: "Folo",
-			icon: "simple-icons:folo",
-			url: "https://app.folo.is/share/feeds/245004133358075904",
+			url: "https://github.com/QC3284",
 		},
 	],
 };
@@ -164,14 +122,12 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 
 export const umamiConfig: UmamiConfig = {
 	enable: true,
-	baseUrl: `https://u.${customDomain}`,
-	shareId: "CdkXbGgZr6ECKOyK",
+	baseUrl: "https://umami.3284123.xyz",
+	shareId: "21i0HxSvjaEWAGfU",
 	timezone: "Asia/Shanghai",
 };
 
 export const gitHubEditConfig: GitHubEditConfig = {
 	enable: true,
-	baseUrl: "https://github.com/afoim/fuwari/blob/main/src/content/posts",
+	baseUrl: "https://github.com/QC3284/afo-fuwari/blob/main/src/content/posts",
 };
-
-// todoConfig removed from here
