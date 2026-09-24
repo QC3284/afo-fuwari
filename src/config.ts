@@ -41,7 +41,7 @@ export const siteConfig: SiteConfig = {
 		size: "cover",
 		repeat: "no-repeat",
 		attachment: "fixed",
-		opacity: 1,
+		opacity: 0.35,
 	},
 	toc: {
 		enable: true,

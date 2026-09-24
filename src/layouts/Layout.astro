@@ -267,7 +267,14 @@ const bannerOffset =
 
 		{/* 随机背景容器：random.js 需要 #bg-box 元素才能设置背景。
 		    该容器与样式在 2026-01 那次上游合并中丢失，2026-09-24 依 legacy 分支实现补回 */}
-		<style is:global>
+		<style is:global define:vars={{
+			'bg-enable': siteConfig.background.enable ? '1' : '0',
+			'bg-position': siteConfig.background.position || 'center',
+			'bg-size': siteConfig.background.size || 'cover',
+			'bg-repeat': siteConfig.background.repeat || 'no-repeat',
+			'bg-attachment': siteConfig.background.attachment || 'fixed',
+			'bg-opacity': (siteConfig.background.opacity ?? 0.3).toString(),
+		}}>
 			#bg-box {
 				position: fixed;
 				top: 0;
