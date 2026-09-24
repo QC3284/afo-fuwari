@@ -272,6 +272,14 @@ const bannerOffset =
 
 
 
+		{/* 随机背景图：由自建图片 API 的脚本动态设置。
+		    该 <script> 在 2026-01 那次上游合并中丢失，2026-09-24 依 siteConfig.background 配置补回 */}
+		{siteConfig.background.enable && (
+			<>
+				<link rel="preconnect" href="https://pic-eo-1.xcqcoo.top" />
+				<script is:inline data-swup-ignore-script src={siteConfig.background.src} defer></script>
+			</>
+		)}
 	</head>
 	<body class=" min-h-screen " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}>
 
