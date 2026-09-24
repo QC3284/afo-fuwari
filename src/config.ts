@@ -54,10 +54,10 @@ export const siteConfig: SiteConfig = {
 	],
 	officialSites: [
 		{ url: "https://blog.3284123.xyz", alias: "CN" },
-		{ url: "https://cf-blog.xcqcoo.top", alias: "Global" },
+		{ url: "https://eo-blog.xcqcoo.top", alias: "Global" },
 	],
 	server: [
-		{ url: "", text: "Blog" },
+		{ url: "https://blog.3284123.xyz", text: "Blog" },
 		{ url: "https://umami.3284123.xyz", text: "Umami" },
 		{ url: "https://pic-eo-1.xcqcoo.top", text: "RandomPic" },
 	],
