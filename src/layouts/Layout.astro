@@ -265,6 +265,26 @@ const bannerOffset =
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" media="print" onload="this.media='all'" />
 		<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" /></noscript>
 
+		{/* 随机背景容器：random.js 需要 #bg-box 元素才能设置背景。
+		    该容器与样式在 2026-01 那次上游合并中丢失，2026-09-24 依 legacy 分支实现补回 */}
+		<style is:global>
+			#bg-box {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-position: var(--bg-position, center);
+				background-size: var(--bg-size, cover);
+				background-repeat: var(--bg-repeat, no-repeat);
+				opacity: 0;
+				pointer-events: none;
+				z-index: -1;
+				transition: opacity 0.3s ease-in-out;
+			}
+			#bg-box.loaded { opacity: calc(var(--bg-opacity, 1) * var(--bg-enable, 1)); }
+		</style>
+
 		<slot name="head"></slot>
 
 
@@ -282,6 +302,8 @@ const bannerOffset =
 		)}
 	</head>
 	<body class=" min-h-screen " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}>
+		<noscript><style>#bg-box { opacity: 1 !important; }</style></noscript>
+		<div id="bg-box"></div>
 
 
 
